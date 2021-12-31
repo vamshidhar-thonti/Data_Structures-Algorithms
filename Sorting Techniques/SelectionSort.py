@@ -1,5 +1,5 @@
 # Time Complexity  --> O(N^2) --> Nested loop
-# Space Complexity --> O(1)   --> As we are not using an additional list
+# Space Complexity --> O(1)   --> As we are not using any additional list
 
 numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
 

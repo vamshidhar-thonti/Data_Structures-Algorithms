@@ -1,5 +1,5 @@
 # Time Complexity  --> O(N^2) --> Nested loop
-# Space Complexity --> O(1)   --> As we are not using an additional list
+# Space Complexity --> O(1)   --> As we are not using any additional list
 
 # If the given input is small or if its nearly sorted,
 #     Insertion sort is the best and can be acheived in  O(N)
