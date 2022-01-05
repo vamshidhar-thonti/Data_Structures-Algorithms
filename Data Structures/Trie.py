@@ -14,7 +14,7 @@ class Trie:
         parent = self.root
         for index, char in enumerate(word):
             if char not in parent.children:
-                parent.children[char] = Node(word)
+                parent.children[char] = Node(word[:index + 1])
             parent = parent.children[char]
             if index == len(word) - 1:
                 parent.end_here = True
@@ -61,19 +61,19 @@ trie.insert('ban')
 trie.insert('bank')
 trie.insert('band')
 
-print(trie.search('apple'))
-print(trie.search('apples'))
-print(trie.starts_with('app'))
+# print(trie.search('apple'))
+# print(trie.search('apples'))
+# print(trie.starts_with('app'))
 
 print(trie.search('bad'))
 print(trie.search('ban'))
-print(trie.search('bank'))
-print(trie.search('band'))
+# print(trie.search('bank'))
+# print(trie.search('band'))
 
-print(trie.delete('ban'))
-print(trie.search('bad'))
-print(trie.search('ban'))
-print(trie.search('bank'))
-print(trie.search('band'))
+# print(trie.delete('ban'))
+# print(trie.search('bad'))
+# print(trie.search('ban'))
+# print(trie.search('bank'))
+# print(trie.search('band'))
 
-print(trie.starts_with('ban'))
+# print(trie.starts_with('ban'))
