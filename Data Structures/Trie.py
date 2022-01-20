@@ -51,6 +51,21 @@ class Trie:
                 if parent.end_here:
                     parent.end_here = False
                     return f"Deleted {word}"
+
+    # def words_with(self, word):
+    #     parent = self.root
+    #     for char in word:
+    #         if char not in parent.children.keys():
+    #             return "No such word exist"
+    #         else:
+    #             parent = parent.children[char]
+    #     prefix = word
+    #     visited_nodes = {x:False for x in parent.children.keys()}
+    #     def _possibilities(root, words_list):
+            
+    #         return words_list
+    #     return _possibilities(parent, [])
+
 trie = Trie()
 
 trie.insert('apple')

@@ -85,6 +85,14 @@ class BinarySearchTree:
         
         return self.breadthFirstSearchRecursive(queue, bfs_list)
 
+# Tree Structure:
+
+#         __100__
+#        /        \
+#     74           120
+#    /  \         /   \
+#  32    86    111     150
+
 bst = BinarySearchTree()
 bst.insert(100)
 bst.insert(74)
